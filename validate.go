@@ -133,7 +133,7 @@ func validateUnitPrice(price string) bool {
 
 	} else {
 		if _, err := strconv.Atoi(price); err == nil {
-
+			price = price + ".00"
 		} else {
 			APIValidationError += " Unit Price is must be a valid number. "
 			return false
