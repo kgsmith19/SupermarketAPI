@@ -20,11 +20,11 @@ Application execution instructions:
 
 --GET--
 --fetch all inventory
-http://localhost:1000/inventory <--This will fetch all inventory to the database.  Set GET as request type if using testing tool.
+http://localhost:10000/inventory <--This will fetch all inventory to the database.  Set GET as request type if using testing tool.
 
 --fetch produce item
-http://localhost:1000/produceItem/{produceCode} <--This will fetch a single item if produce code is found in the database. Set GET as request type if using testing tool.
-e.g. http://localhost:1000/produceItem/A12T-4GH7-QPL9-3N4M
+http://localhost:10000/produceItem/{produceCode} <--This will fetch a single item if produce code is found in the database. Set GET as request type if using testing tool.
+e.g. http://localhost:10000/produceItem/A12T-4GH7-QPL9-3N4M
 
 --POST--
 --add produce item
@@ -33,8 +33,8 @@ Go to REST Testing tool and enter url with POST desigination.  There should be a
 e.g. {"ProduceCode":"XUIT-212D-LDSW-256F","":"Orange","UnitPrice":"5.67"}
 
 --delete produce item
-http://localhost:1000/deleteProduceItem/{produceCode} <--This will delete a single produce item if found in the database.  Set POST as request type.
-e.g. http://localhost:1000/deleteProduceItem/A12T-4GH7-QPL9-3N4M
+http://localhost:10000/deleteProduceItem/{produceCode} <--This will delete a single produce item if found in the database.  Set POST as request type.
+e.g. http://localhost:10000/deleteProduceItem/A12T-4GH7-QPL9-3N4M
 
 
 
